@@ -1,5 +1,5 @@
 local Plugin = {'nvim-lualine/lualine.nvim',
-								dependencies = { 'nvim-tree/nvim-web-devicons' }
+								dependencies = {'nvim-tree/nvim-web-devicons'}
 								}
 
 Plugin.event = 'VeryLazy'
@@ -7,8 +7,7 @@ Plugin.event = 'VeryLazy'
 -- See :help lualine.txt
 Plugin.opts = {
   options = {
-    theme = 'tokyonight',
-    icons_enabled = true,
+    theme = 'monokai',
     component_separators = '|',
     section_separators = '',
     disabled_filetypes = {
