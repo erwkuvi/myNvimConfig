@@ -4,7 +4,10 @@ Plugin.lazy = false
 
 -- See :help mason-settings
 Plugin.opts = {
-  ui = {border = 'rounded'}
+  ui = {border = 'rounded'},
+	ensure_installed = {
+		"clangd"
+	}
 }
 
 return Plugin

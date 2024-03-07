@@ -48,6 +48,11 @@ end
 
 function Plugin.config()
   local lspconfig = require('lspconfig')
+	lspconfig.clangd.setup {
+		on_attach = function (client, bufnr)
+			
+		end
+	}
   local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
 
   local group = vim.api.nvim_create_augroup('lsp_cmds', {clear = true})
@@ -64,6 +69,7 @@ function Plugin.config()
       'eslint',
       'tsserver',
       'lua_ls',
+			'clangd',
     },
     handlers = {
       -- See :help mason-lspconfig-dynamic-server-setup
