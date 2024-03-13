@@ -96,6 +96,7 @@ Leader key: `Space`.
 | Normal | `gl` | Show diagnostics in a floating window. |
 | Normal | `[d` | Move to the previous diagnostic. |
 | Normal | `]d` | Move to the next diagnostic. |
+| Normal | `<leader>n` | Toggle the autosave function. |
 
 ### Autocomplete keybindings
 
