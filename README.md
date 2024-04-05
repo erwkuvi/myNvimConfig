@@ -153,3 +153,19 @@ Leader key: `Space`.
 | [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp) | nvim-cmp source. Show suggestions based on LSP servers queries. |
 | [LuaSnip](https://github.com/L3MON4D3/LuaSnip) | Snippet engine. |
 | [friendly-snippets](https://github.com/rafamadriz/friendly-snippets) | Collection of snippets. |
+
+## TMUX Keybindings
+ Leader Key: 'CTRL + B'.
+ 
+'<leader>d' | Detach from the current session.
+'<leader>%' | Split the window into two panes horizontally.
+'<leader>"' | Split the window into two panes vertically.
+'<leader>Arrow Key' | (Left, Right, Up, Down) — Move between panes.
+'<leader>x' | Close pane.
+'<leader>c' | Create a new window.
+'<leader>n or p' | Move to the next or previous window.
+'<leader>0 (1,2,3..)' | Move to a specific window by number.
+'<leader>:' | Enter the command line to type commands. Tab completion is available.
+'<leader>?' | View all keybindings. Press Q to exit.
+'<leader>w' | Open a panel to navigate across windows in multiple sessions.
+'<leader>d' | Detach from the current session.
