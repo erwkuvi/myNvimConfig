@@ -159,6 +159,7 @@ Leader key: `Space`.
 ## TMUX Keybindings
  Leader Key: 'CTRL + B'.
  
+| [friendly-snippets](https://github.com/rafamadriz/friendly-snippets) | Collection of snippets. |
 | '<leader>d' | Detach from the current session. |
 | '<leader>%' | Split the window into two panes horizontally. |
 | '<leader>"' | Split the window into two panes vertically. |
