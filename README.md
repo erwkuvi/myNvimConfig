@@ -157,6 +157,7 @@ Leader key: `Space`.
 | [friendly-snippets](https://github.com/rafamadriz/friendly-snippets) | Collection of snippets. |
 
 ## TMUX Keybindings
+
  Leader Key: 'CTRL + B'.
  
 | [friendly-snippets](https://github.com/rafamadriz/friendly-snippets) | Collection of snippets. |
