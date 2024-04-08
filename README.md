@@ -1,4 +1,4 @@
-# myNvimConfig
+
 
 # Neovim Starter
 
@@ -97,6 +97,8 @@ Leader key: `Space`.
 | Normal | `[d` | Move to the previous diagnostic. |
 | Normal | `]d` | Move to the next diagnostic. |
 | Normal | `<leader>n` | Toggle the autosave function. |
+| Normal | `<leader>c` | Change to next buffer ":bn".  |
+| Normal | `<leader>m` | Change to previous buffer ":bp".  |
 
 ### Autocomplete keybindings
 

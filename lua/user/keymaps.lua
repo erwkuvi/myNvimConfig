@@ -17,5 +17,9 @@ vim.keymap.set({'n', 'x'}, 'X', '"_d')
 -- Commands
 vim.keymap.set('n', '<leader>w', '<cmd>write<cr>')
 vim.keymap.set('n', '<leader>bq', '<cmd>bdelete<cr>')
-vim.keymap.set('n', '<leader>bl', '<cmd>buffer #<cr>')
+vim.keymap.set('n', '<leader>bl', '<cmd>buffer #<cr>')-- Define a key mapping for the ]n combination to execute :bn
+
+vim.api.nvim_set_keymap('n', '<leader>c', ':bn<cr>', { noremap = true, silent = false })
+vim.api.nvim_set_keymap('n', '<leader>m', ':bp<cr>', { noremap = true, silent = false })
+
 
