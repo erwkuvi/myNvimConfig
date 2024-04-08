@@ -1,4 +1,0 @@
-local Plugin = {'pbondoer/vim-42header'}
-
-Plugin.event = 'VeryLazy'
-return Plugin
