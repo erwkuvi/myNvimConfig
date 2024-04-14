@@ -22,4 +22,8 @@ vim.keymap.set('n', '<leader>bl', '<cmd>buffer #<cr>')-- Define a key mapping fo
 vim.api.nvim_set_keymap('n', '<leader>c', ':bn<cr>', { noremap = true, silent = false })
 vim.api.nvim_set_keymap('n', '<leader>m', ':bp<cr>', { noremap = true, silent = false })
 
-
+-- Navigation
+vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
+vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
+vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
+vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
