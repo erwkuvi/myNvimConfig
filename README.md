@@ -99,6 +99,10 @@ Leader key: `Space`.
 | Normal | `<leader>n` | Toggle the autosave function. |
 | Normal | `<leader>c` | Change to next buffer ":bn".  |
 | Normal | `<leader>m` | Change to previous buffer ":bp".  |
+| Normal | `<C-h>` | Navigate panes/buffers to the left.  |
+| Normal | `<C-j>` | Navigate panes/buffers down.  |
+| Normal | `<C-k>` | Navigate panes/buffers up.  |
+| Normal | `<C-l>` | Navigate panes/buffers to the right.  |
 
 ### Autocomplete keybindings
 
@@ -155,21 +159,7 @@ Leader key: `Space`.
 | [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp) | nvim-cmp source. Show suggestions based on LSP servers queries. |
 | [LuaSnip](https://github.com/L3MON4D3/LuaSnip) | Snippet engine. |
 | [friendly-snippets](https://github.com/rafamadriz/friendly-snippets) | Collection of snippets. |
+| [nvim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) | Navigator to use with tmux. |
+| [new-file-template](https://github.com/otavioschwanck/new-file-template.nvim) | Create a template file in any format |
+| [auto-save](https://github.com/pocco81/auto-save.nvim) | Auto save your current file. |
 
-## TMUX Keybindings
-
- Leader Key: 'CTRL + B'.
- 
-| [friendly-snippets](https://github.com/rafamadriz/friendly-snippets) | Collection of snippets. |
-| '<leader>d' | Detach from the current session. |
-| '<leader>%' | Split the window into two panes horizontally. |
-| '<leader>"' | Split the window into two panes vertically. |
-| '<leader>Arrow Key' | (Left, Right, Up, Down) — Move between panes. |
-| '<leader>x' | Close pane. |
-| '<leader>c' | Create a new window. |
-| '<leader>n or p' | Move to the next or previous window. |
-| '<leader>0 (1,2,3..)' | Move to a specific window by number. |
-| '<leader>:' | Enter the command line to type commands. Tab completion is available. |
-| '<leader>?' | View all keybindings. Press Q to exit. |
-| '<leader>w' | Open a panel to navigate across windows in multiple sessions. |
-| '<leader>d' | Detach from the current session. |
