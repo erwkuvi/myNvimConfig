@@ -16,7 +16,7 @@ public:
     ]] .. class_name .. [[(void);
     //]] .. class_name .. [[(const std::string& arg); // In case you need to pass an  argument
     ]] .. class_name .. [[(const ]] .. class_name .. [[& instance);
-    ]] .. class_name .. [[&operator=(const ]] .. class_name .. [[& rhs);
+    ]] .. class_name .. [[ &operator=(const ]] .. class_name .. [[& rhs);
     ~]] .. class_name .. [[(void);
 
     // Add your class members and methods here
