@@ -29,5 +29,21 @@ vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
 vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 
 -- Extras
-vim.keymap.set('n', '<Enter>', 'o<ESC>') --add a new line below while remaining in Normal mode
-vim.keymap.set('n', 'S-<Enter>', 'O<ESC>') --add a new line above while remaining in Normal mode
+
+vim.keymap.set('n', '<leader><CR>', 'O<ESC>') --add a new line above while remaining in Normal mode
+vim.keymap.set('n', '<CR>', 'o<ESC>') --add a new line below while remaining in Normal mode
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
