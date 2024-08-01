@@ -7,4 +7,5 @@ load('user.commands')
 load('user.keymaps')
 require('user.plugins')
  
-pcall(vim.cmd.colorscheme, 'tokyonight-moon')
+pcall(vim.cmd.colorscheme, 'slate')
+-- pcall(vim.cmd.colorscheme, 'tokyonight-moon')
