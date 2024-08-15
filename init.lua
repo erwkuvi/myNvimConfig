@@ -6,6 +6,5 @@ load('user.settings')
 load('user.commands')
 load('user.keymaps')
 require('user.plugins')
- 
-pcall(vim.cmd.colorscheme, 'onedark')
--- pcall(vim.cmd.colorscheme, 'tokyonight-moon')
+
+pcall(vim.cmd.colorscheme, 'tokyonight-moon')
