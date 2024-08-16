@@ -19,8 +19,8 @@ vim.keymap.set('n', '<leader>w', '<cmd>write<cr>')
 vim.keymap.set('n', '<leader>bq', '<cmd>bdelete<cr>')
 vim.keymap.set('n', '<leader>bl', '<cmd>buffer #<cr>')-- Define a key mapping for the ]n combination to execute :bn
 
-vim.api.nvim_set_keymap('n', '<leader>c', ':bn<cr>', { noremap = true, silent = false })
-vim.api.nvim_set_keymap('n', '<leader>m', ':bp<cr>', { noremap = true, silent = false })
+vim.keymap.set('n', '<leader>c', ':bn<cr>', { noremap = true, silent = false })
+vim.keymap.set('n', '<leader>m', ':bp<cr>', { noremap = true, silent = false })
 
 -- Navigation
 vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
@@ -34,6 +34,12 @@ vim.keymap.set('n', '<leader><CR>', 'O<ESC>') --add a new line above while remai
 vim.keymap.set('n', '<CR>', 'o<ESC>') --add a new line below while remaining in Normal mode
 
 
+vim.keymap.set("n", "<A-j>", ":move .+1<CR>==", { noremap = true, silent = true })
+vim.keymap.set("n", "<A-k>", ":move .-2<CR>==", { noremap = true, silent = true })
+vim.keymap.set("i", "<A-j>", "<Esc>:move .+1<CR>==", { noremap = true, silent = true })
+vim.keymap.set("i", "<A-k>", "<Esc>:move .-2<CR>==", { noremap = true, silent = true })
+vim.keymap.set("v", "<A-j>", ":move '>+1<CR>gv=gv", { noremap = true, silent = true })
+vim.keymap.set("v", "<A-k>", ":move '<-2<CR>gv=gv", { noremap = true, silent = true })
 
 
 
