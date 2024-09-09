@@ -41,15 +41,10 @@ vim.keymap.set("i", "<A-k>", "<Esc>:move .-2<CR>==", { noremap = true, silent = 
 vim.keymap.set("v", "<A-j>", ":move '>+1<CR>gv=gv", { noremap = true, silent = true })
 vim.keymap.set("v", "<A-k>", ":move '<-2<CR>gv=gv", { noremap = true, silent = true })
 
+--Copilot keybindings
+--vim.g.copilot_no_tab_map = true;
+--vim.keymap.set('i', '<C-S>', 'copilot#Accept(" ")', { silent = true, expr = true, noremap = true })
 
-
-
-
-
-
-
-
-
-
-
+vim.keymap.set('n', "<leader>ce", ":Copilot enable<CR>", {noremap = true, silent = true })
+vim.keymap.set('n', "<leader>cd", ":Copilot disable<CR>", {noremap = true, silent = true })
 

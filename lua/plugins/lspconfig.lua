@@ -67,9 +67,9 @@ function Plugin.config()
   require('mason-lspconfig').setup({
     ensure_installed = {
       'eslint',
-      'tsserver',
+			'tsserver',
       'lua_ls',
-			'clangd',
+			'clangd'
     },
     handlers = {
       -- See :help mason-lspconfig-dynamic-server-setup
