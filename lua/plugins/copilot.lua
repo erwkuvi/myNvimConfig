@@ -10,6 +10,8 @@ return {
 
       -- Keybinding to accept Copilot suggestion with <C-J>
       vim.keymap.set('i', '<c-q>', 'copilot#Accept("<CR>")', { expr = true, silent = true, noremap = true, replace_keycodes = false })
+      --vim.keymap.set('n', '<c-x>', ':CopilotChat<CR>', { silent = true, noremap = true })
+
 
     end,
   },
