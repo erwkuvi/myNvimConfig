@@ -103,9 +103,10 @@ Leader key: `Space`.
 | Normal | `<C-j>` | Navigate panes/buffers down.  |
 | Normal | `<C-k>` | Navigate panes/buffers up.  |
 | Normal | `<C-l>` | Navigate panes/buffers to the right.  |
-| Normal | `<C-ce>` | 'Copilot enabled'.  |
-| Normal | `<C-cd>` | 'Copilot disabled'.  |
-| Normal | `<c-s>` | Submits prompt in copilot chat.  |
+| Normal | `<leader>ce` | 'Copilot enabled'.  |
+| Normal | `<leader>cd` | 'Copilot disabled'.  |
+| Normal | `<C-s>` | Submits prompt in copilot chat.  |
+| Insert | `<C-c>` | Closes copilot chat.  |
 | Normal | `<leader>aa` | Toggles Copilot chat.  |
 | Visual | `<leader>aa` | Toggles Copilot chat.  |
 | Normal | `<leader>ad` | Diagnostic help.  |
