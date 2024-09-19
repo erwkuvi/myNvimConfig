@@ -33,7 +33,6 @@ vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 vim.keymap.set('n', '<leader><CR>', 'O<ESC>') --add a new line above while remaining in Normal mode
 vim.keymap.set('n', '<CR>', 'o<ESC>') --add a new line below while remaining in Normal mode
 
-
 vim.keymap.set("n", "<A-j>", ":move .+1<CR>==", { noremap = true, silent = true })
 vim.keymap.set("n", "<A-k>", ":move .-2<CR>==", { noremap = true, silent = true })
 vim.keymap.set("i", "<A-j>", "<Esc>:move .+1<CR>==", { noremap = true, silent = true })
@@ -47,4 +46,10 @@ vim.keymap.set("v", "<A-k>", ":move '<-2<CR>gv=gv", { noremap = true, silent = t
 
 vim.keymap.set('n', "<leader>ce", ":Copilot enable<CR>", {noremap = true, silent = true })
 vim.keymap.set('n', "<leader>cd", ":Copilot disable<CR>", {noremap = true, silent = true })
+
+
+
+
+
+
 
