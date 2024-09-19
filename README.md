@@ -97,8 +97,8 @@ Leader key: `Space`.
 | Normal | `[d` | Move to the previous diagnostic. |
 | Normal | `]d` | Move to the next diagnostic. |
 | Normal | `<leader>n` | Toggle the autosave function. |
-| Normal | `<leader>c` | Change to next buffer ":bn".  |
-| Normal | `<leader>m` | Change to previous buffer ":bp".  |
+| Normal | `<S-l>` | Change to next buffer ":bn".  |
+| Normal | `<S-h>` | Change to previous buffer ":bp".  |
 | Normal | `<C-h>` | Navigate panes/buffers to the left.  |
 | Normal | `<C-j>` | Navigate panes/buffers down.  |
 | Normal | `<C-k>` | Navigate panes/buffers up.  |

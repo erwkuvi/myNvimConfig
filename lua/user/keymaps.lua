@@ -19,8 +19,8 @@ vim.keymap.set('n', '<leader>w', '<cmd>write<cr>')
 vim.keymap.set('n', '<leader>bq', '<cmd>bdelete<cr>')
 vim.keymap.set('n', '<leader>bl', '<cmd>buffer #<cr>')-- Define a key mapping for the ]n combination to execute :bn
 
-vim.keymap.set('n', '<leader>c', ':bn<cr>', { noremap = true, silent = false })
-vim.keymap.set('n', '<leader>m', ':bp<cr>', { noremap = true, silent = false })
+vim.keymap.set('n', '<S-l>', ':bn<cr>', { noremap = true, silent = false })
+vim.keymap.set('n', '<S-h>', ':bp<cr>', { noremap = true, silent = false })
 
 -- Navigation
 vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
