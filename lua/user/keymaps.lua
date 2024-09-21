@@ -39,6 +39,7 @@ vim.keymap.set("i", "<A-j>", "<Esc>:move .+1<CR>==", { noremap = true, silent = 
 vim.keymap.set("i", "<A-k>", "<Esc>:move .-2<CR>==", { noremap = true, silent = true })
 vim.keymap.set("v", "<A-j>", ":move '>+1<CR>gv=gv", { noremap = true, silent = true })
 vim.keymap.set("v", "<A-k>", ":move '<-2<CR>gv=gv", { noremap = true, silent = true })
+vim.keymap.set('i', 'JJ', '<Esc>', {noremap = true, silent = true}) -- Exit inset mode by double tapping uppercase J
 
 --Copilot keybindings
 --vim.g.copilot_no_tab_map = true;

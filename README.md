@@ -113,6 +113,7 @@ Leader key: `Space`.
 | Normal | `<leader>aq` | Copilot quick chat.  |
 | Normal | `<leader>ax` | Clear/reset copilot chat history.  |
 | Normal | `<leader>ap` | Prompt Actions (Copilot Chat).  |
+| Insert | `JJ` | Exits insert mode by double tapping uppercase J.  |
 
 ### Autocomplete keybindings
 
