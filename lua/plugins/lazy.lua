@@ -67,6 +67,16 @@ end,
   lazy = false,
   version = false, -- set this if you want to always pull the latest change
   opts = {
+		provider = "copilot",
+		openai = {
+			endpoint = "https://api.githubcopilot.com",
+			model = "gpt-4o-2024-08-06",
+			proxy = nil, -- [protocol://]host[:port] Use this proxy
+			allow_insecure = false, -- Allow insecure server connections
+			timeout = 30000, -- Timeout in milliseconds
+			temperature = 0,
+			max_tokens = 4096,
+		}
     -- add any opts here
   },
   -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
