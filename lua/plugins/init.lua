@@ -6,6 +6,7 @@ local Plugins = {
   {'numToStr/Comment.nvim', config = true, event = 'VeryLazy'},
 
   -- Themes
+	{'catppuccin/nvim', name = "catppuccin", priority = 1000},
   {'folke/tokyonight.nvim'},
   {'joshdick/onedark.vim'},
   {'tanvirtin/monokai.nvim'},

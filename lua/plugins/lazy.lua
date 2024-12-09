@@ -56,6 +56,7 @@ return {
       pcall(function()
         if vim.api.nvim_buf_is_valid(starter.config.buf_id) then
           starter.refresh()
+
         end
       end)
     end,
@@ -67,6 +68,16 @@ end,
   lazy = false,
   version = false, -- set this if you want to always pull the latest change
   opts = {
+		-- provider = "openai",
+		-- openai = {
+		-- 	-- endpoint = "https://api.openai.com/v1",
+		-- 	model = "gpt-4o-mini",
+
+		-- 	-- timeout = 30000,
+		-- 	-- temperature = 0,
+		-- 	-- max_tokens = 4096,
+		-- 	-- ["local"] = false,
+		-- },
 		provider = "copilot",
 		openai = {
 			endpoint = "https://api.githubcopilot.com",
@@ -96,20 +107,20 @@ end,
       event = "VeryLazy",
       opts = {
         -- recommended settings
-	--provider = "copilot",
-	--copilot = {
-	--    endpoint = "https://api.githubcopilot.com",
-	--    model = "gpt-4o-2024-08-06",
-	--    proxy = nil, -- [protocol://]host[:port] Use this proxy
-	--    allow_insecure = false, -- Allow insecure server connections
-	--    -- timeout = 30000, -- Timeout in milliseconds
-	--    -- temperature = 0,
-	--    -- max_tokens = 4096,
-	--    },
-	  provider = "openai",
-	  openai = {
-	    model = "gpt-40-mini",
+	provider = "copilot",
+	copilot = {
+	    endpoint = "https://api.githubcopilot.com",
+	    model = "gpt-4o-2024-08-06",
+	    proxy = nil, -- [protocol://]host[:port] Use this proxy
+	    allow_insecure = false, -- Allow insecure server connections
+	    -- timeout = 30000, -- Timeout in milliseconds
+	    -- temperature = 0,
+	    -- max_tokens = 4096,
 	    },
+	  --provider = "openai",
+	  --openai = {
+	  --  model = "gpt-40-mini",
+	  --  },
 		--	default = {
 		 -- 	embed_image_as_base64 = false,
 		 -- 	prompt_for_file_name = false,
