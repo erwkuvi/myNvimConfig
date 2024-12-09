@@ -48,6 +48,11 @@ vim.keymap.set('i', 'JJ', '<Esc>', {noremap = true, silent = true}) -- Exit inse
 vim.keymap.set('n', "<leader>ce", ":Copilot enable<CR>", {noremap = true, silent = true })
 vim.keymap.set('n', "<leader>cd", ":Copilot disable<CR>", {noremap = true, silent = true })
 
+-- Increase current pane size by 50 pixels with <leader> + left arrow
+vim.keymap.set('n', '<leader><Left>', ':vertical resize +10<CR>', { noremap = true, silent = true })
+
+vim.keymap.set('n', '<leader><Down>', ':resize +5<CR>', { noremap = true, silent = true })
+
 
 
 

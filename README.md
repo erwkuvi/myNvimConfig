@@ -105,15 +105,13 @@ Leader key: `Space`.
 | Normal | `<C-l>` | Navigate panes/buffers to the right.  |
 | Normal | `<leader>ce` | 'Copilot enabled'.  |
 | Normal | `<leader>cd` | 'Copilot disabled'.  |
-| Normal | `<C-s>` | Submits prompt in copilot chat.  |
+| Normal | `<C-s>` | Submits prompt in avante chat.  |
 | Insert | `<C-c>` | Closes copilot chat.  |
-| Normal | `<leader>aa` | Toggles Copilot chat.  |
-| Visual | `<leader>aa` | Toggles Copilot chat.  |
+| Normal | `<leader>aa` | Toggles avante chat.  |
 | Normal | `<leader>ad` | Diagnostic help.  |
-| Normal | `<leader>aq` | Copilot quick chat.  |
-| Normal | `<leader>ax` | Clear/reset copilot chat history.  |
-| Normal | `<leader>ap` | Prompt Actions (Copilot Chat).  |
 | Insert | `JJ` | Exits insert mode by double tapping uppercase J.  |
+| Normal | `<leader><Left>` | Increases Pane size vertically.  |
+| Normal | `<leader><Down>` | Increases Pane size horizontally.  |
 
 ### Autocomplete keybindings
 
@@ -173,4 +171,5 @@ Leader key: `Space`.
 | [nvim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) | Navigator to use with tmux. |
 | [new-file-template](https://github.com/otavioschwanck/new-file-template.nvim) | Create a template file in any format |
 | [auto-save](https://github.com/pocco81/auto-save.nvim) | Auto save your current file. |
+| [avante](https://github.com/yetone/avante.nvim) | AI plug-in. |
 
