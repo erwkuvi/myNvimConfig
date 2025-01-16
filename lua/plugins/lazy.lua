@@ -68,6 +68,15 @@ end,
   lazy = false,
   version = false, -- set this if you want to always pull the latest change
   opts = {
+		auto_suggestions_provider = "copilot",
+		-- provider = "claude", -- Recommend using Claude
+		-- claude = {
+		-- 	endpoint = "https://api.anthropic.com",
+		-- 	model = "claude-3-haiku",
+		-- 	--model = "claude-3-sonnet",
+		-- 	temperature = 0,
+		-- 	max_tokens = 4096,
+		-- },
 		-- provider = "openai",
 		-- openai = {
 		-- 	-- endpoint = "https://api.openai.com/v1",
@@ -107,16 +116,16 @@ end,
       event = "VeryLazy",
       opts = {
         -- recommended settings
-	provider = "copilot",
-	copilot = {
-	    endpoint = "https://api.githubcopilot.com",
-	    model = "gpt-4o-2024-08-06",
-	    proxy = nil, -- [protocol://]host[:port] Use this proxy
-	    allow_insecure = false, -- Allow insecure server connections
+	-- provider = "copilot",
+	-- copilot = {
+	--     endpoint = "https://api.githubcopilot.com",
+	--     model = "gpt-4o-2024-08-06",
+	--     proxy = nil, -- [protocol://]host[:port] Use this proxy
+	--     allow_insecure = false, -- Allow insecure server connections
 	    -- timeout = 30000, -- Timeout in milliseconds
 	    -- temperature = 0,
 	    -- max_tokens = 4096,
-	    },
+	    --},
 	  --provider = "openai",
 	  --openai = {
 	  --  model = "gpt-40-mini",
