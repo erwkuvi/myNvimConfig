@@ -6,6 +6,9 @@
 	enable = false,
   lazy = false,
   priority = 1000,
-  opts = {"moon"},
+  opts = {
+    style = "moon",
+    transparent = true
+  },
 	}
 
