@@ -11,13 +11,14 @@ vim.keymap.set({'n', 'x'}, 'gy', '"+y') -- copy
 vim.keymap.set({'n', 'x'}, 'gp', '"+p') -- paste
 
 -- Delete text
-vim.keymap.set({'n', 'x'}, 'x', '"_x')
-vim.keymap.set({'n', 'x'}, 'X', '"_d')
+-- Delete text without affecting the unnamed register
+vim.keymap.set({'n', 'x'}, 'x', '"_x') -- Delete character under the cursor
+vim.keymap.set({'n', 'x'}, 'X', '"_d') -- Delete text in visual mode
 
 -- Commands
-vim.keymap.set('n', '<leader>w', '<cmd>write<cr>')
-vim.keymap.set('n', '<leader>bq', '<cmd>bdelete<cr>')
-vim.keymap.set('n', '<leader>bl', '<cmd>buffer #<cr>')-- Define a key mapping for the ]n combination to execute :bn
+vim.keymap.set('n', '<leader>w', '<cmd>write<cr>') -- Save the current buffer
+vim.keymap.set('n', '<leader>bq', '<cmd>bdelete<cr>') -- Close the current buffer
+vim.keymap.set('n', '<leader>bl', '<cmd>buffer #<cr>') -- Switch to the last accessed buffer
 
 vim.keymap.set('n', '<S-l>', ':bn<cr>', { noremap = true, silent = false })
 vim.keymap.set('n', '<S-h>', ':bp<cr>', { noremap = true, silent = false })
@@ -30,16 +31,18 @@ vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 
 -- Extras
 
-vim.keymap.set('n', '<leader><CR>', 'O<ESC>') --add a new line above while remaining in Normal mode
-vim.keymap.set('n', '<CR>', 'o<ESC>') --add a new line below while remaining in Normal mode
+vim.keymap.set('n', '<leader><CR>', 'O') --add a new line above while remaining in Normal mode
+vim.keymap.set('n', '<CR>', 'o') --add a new line below while remaining in Normal mode
 
+-- Move current line down and up
 vim.keymap.set("n", "<A-j>", ":move .+1<CR>==", { noremap = true, silent = true })
 vim.keymap.set("n", "<A-k>", ":move .-2<CR>==", { noremap = true, silent = true })
 vim.keymap.set("i", "<A-j>", "<Esc>:move .+1<CR>==", { noremap = true, silent = true })
 vim.keymap.set("i", "<A-k>", "<Esc>:move .-2<CR>==", { noremap = true, silent = true })
 vim.keymap.set("v", "<A-j>", ":move '>+1<CR>gv=gv", { noremap = true, silent = true })
 vim.keymap.set("v", "<A-k>", ":move '<-2<CR>gv=gv", { noremap = true, silent = true })
-vim.keymap.set('i', 'JJ', '<Esc>', {noremap = true, silent = true}) -- Exit inset mode by double tapping uppercase J
+
+vim.keymap.set('i', 'JJ', '<Esc>', {noremap = true, silent = true}) -- Exit insert mode
 
 --Copilot keybindings
 --vim.g.copilot_no_tab_map = true;
@@ -49,9 +52,9 @@ vim.keymap.set('n', "<leader>ce", ":Copilot enable<CR>", {noremap = true, silent
 vim.keymap.set('n', "<leader>cd", ":Copilot disable<CR>", {noremap = true, silent = true })
 
 -- Increase current pane size by 50 pixels with <leader> + left arrow
-vim.keymap.set('n', '<leader><Left>', ':vertical resize +10<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader><Left>', ':vertical resize +10<CR>', { noremap = true, silent = true }) -- Increase current pane width by 10 columns
 
-vim.keymap.set('n', '<leader><Down>', ':resize +5<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader><Down>', ':resize +5<CR>', { noremap = true, silent = true }) -- Increase current pane height by 5 rows
 
 
 
