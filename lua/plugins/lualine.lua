@@ -11,10 +11,10 @@ Plugin.opts = {
 		icons_enabled = true,
 		section_separators   = { left = '', right = '' },
     component_separators = { left = '', right = '' },
-    --[[ disabled_filetypes = {
-      statusline = { 'NvimTree', 'alpha' },
-      winbar     = {},
-    }, ]]
+    -- disabled_filetypes = {
+    --   statusline = { 'NvimTree', 'alpha' },
+    --   winbar     = {},
+    -- }, 
     -- always_divide_middle = true,
     globalstatus = true,
   },

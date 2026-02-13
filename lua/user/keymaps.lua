@@ -58,7 +58,8 @@ vim.keymap.set('n', '<leader><Down>', ':resize +5<CR>', { noremap = true, silent
 
 
 
-
+-- for applying prettier 
+-- vim.keymap.set('n', '<leader>T', '<cmd>lua vim.lsp.buf.formatting()<CR>', { noremap = true, silent = true })
 
 
 
