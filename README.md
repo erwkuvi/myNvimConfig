@@ -172,4 +172,5 @@ Leader key: `Space`.
 | [new-file-template](https://github.com/otavioschwanck/new-file-template.nvim) | Create a template file in any format |
 | [auto-save](https://github.com/pocco81/auto-save.nvim) | Auto save your current file. |
 | [avante](https://github.com/yetone/avante.nvim) | AI plug-in. |
+| [tailwind-tools](https://github.com/luckasRanarison/tailwind-tools.nvim) | Unofficial Tailwind integration plug-in for nvim |
 
