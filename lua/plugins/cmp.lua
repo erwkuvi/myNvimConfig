@@ -2,10 +2,10 @@ local Plugin = {'hrsh7th/nvim-cmp'}
 
 Plugin.dependencies = {
   -- Sources
+	{'hrsh7th/cmp-nvim-lsp'},
   {'hrsh7th/cmp-buffer'},
   {'hrsh7th/cmp-path'},
-  {'saadparwaiz1/cmp_luasnip'},
-  {'hrsh7th/cmp-nvim-lsp'},
+  -- {'saadparwaiz1/cmp_luasnip'},
 
   -- Snippets
   {'L3MON4D3/LuaSnip'},
@@ -13,6 +13,7 @@ Plugin.dependencies = {
 }
 
 Plugin.event = 'InsertEnter'
+-- Plugin.lazy = false
 
 function Plugin.config()
   vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
@@ -36,6 +37,7 @@ function Plugin.config()
       {name = 'nvim_lsp'},
       {name = 'buffer', keyword_length = 3},
       {name = 'luasnip', keyword_length = 2},
+			{name = 'avante'},
     },
     window = {
       completion = cmp.config.window.bordered(),
