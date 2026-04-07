@@ -6,6 +6,3 @@ load('user.settings')
 load('user.commands')
 load('user.keymaps')
 require('user.plugins')
-
--- pcall(vim.cmd, 'colorscheme catppuccin')
--- pcall(vim.cmd, 'colorscheme tokyonight')

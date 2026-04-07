@@ -47,12 +47,13 @@ function Plugin.init()
 end
 
 function Plugin.config()
-	local lspconfig = require('lspconfig')
-	lspconfig.clangd.setup {
-		on_attach = function(client, bufnr)
-
-		end
-	}
+	local vimlspconfig = vim.lsp.config
+	-- local lspconfig = vim.lsp.config
+	-- lspconfig.clangd.setup {
+	-- 	on_attach = function(client, bufnr)
+	--
+	-- 	end
+	-- }
 	local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 	local group = vim.api.nvim_create_augroup('lsp_cmds', { clear = true })
@@ -76,12 +77,16 @@ function Plugin.config()
 			-- See :help mason-lspconfig-dynamic-server-setup
 			function(server)
 				-- See :help lspconfig-setup
-				lspconfig[server].setup({
+				vimlspconfig.tsserver.setup({
 					capabilities = lsp_capabilities,
-				})
+					settings = {
+						completions = {
+							completeFunctionCalls = true
+						}
+					}})
 			end,
 			['ts_ls'] = function()
-				lspconfig.tsserver.setup({
+				vimlspconfig.tsserver.setup({
 					capabilities = lsp_capabilities,
 					settings = {
 						completions = {
@@ -105,19 +110,19 @@ function Plugin.config()
 			['lua_ls'] = function()
 				require('plugins.lsp.lua_ls')
 			end,
-			lspconfig.emmet_ls.setup({
-				-- on_attach = on_attach,
-				capabilities = lsp_capabilities,
-				filetypes = { "css", "eruby", "html", "javascript", "javascriptreact", "less", "sass", "scss", "svelte", "pug", "typescriptreact", "vue" },
-				init_options = {
-					html = {
-						options = {
-							-- For possible options, see: https://github.com/emmetio/emmet/blob/master/src/config.ts#L79-L267
-							["bem.enabled"] = true,
-						},
-					},
-				}
-			})
+			-- lspconfig.emmet_ls.setup({
+			-- 	-- on_attach = on_attach,
+			-- 	capabilities = lsp_capabilities,
+			-- 	filetypes = { "css", "eruby", "html", "javascript", "javascriptreact", "less", "sass", "scss", "svelte", "pug", "typescriptreact", "vue" },
+			-- 	init_options = {
+			-- 		html = {
+			-- 			options = {
+			-- 				-- For possible options, see: https://github.com/emmetio/emmet/blob/master/src/config.ts#L79-L267
+			-- 				["bem.enabled"] = true,
+			-- 			},
+			-- 		},
+			-- 	}
+			-- })
 		}
 	})
 end

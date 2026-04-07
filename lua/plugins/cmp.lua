@@ -51,6 +51,7 @@ function Plugin.config()
           luasnip = '⋗',
           buffer = 'Ω',
           path = '🖫',
+					avante = '',
         }
 
         item.menu = menu_icon[entry.source.name]
