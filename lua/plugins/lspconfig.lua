@@ -11,27 +11,20 @@ Plugin.cmd = { 'LspInfo', 'LspInstall', 'LspUnInstall' }
 Plugin.event = { 'BufReadPre', 'BufNewFile' }
 
 function Plugin.init()
-	local sign = function(opts)
-		-- See :help sign_define()
-		vim.fn.sign_define(opts.name, {
-			texthl = opts.name,
-			text = opts.text,
-			numhl = ''
-		})
-	end
-
-	sign({ name = 'DiagnosticSignError', text = '✘' })
-	sign({ name = 'DiagnosticSignWarn', text = '▲' })
-	sign({ name = 'DiagnosticSignHint', text = '⚑' })
-	sign({ name = 'DiagnosticSignInfo', text = '»' })
-
-	-- See :help vim.diagnostic.config()
 	vim.diagnostic.config({
 		virtual_text = false,
 		severity_sort = true,
 		float = {
 			border = 'rounded',
 			source = 'always',
+		},
+		signs = {
+			text = {
+				[vim.diagnostic.severity.ERROR] = '✘',
+				[vim.diagnostic.severity.WARN]  = '▲',
+				[vim.diagnostic.severity.HINT]  = '⚑',
+				[vim.diagnostic.severity.INFO]  = '»',
+			},
 		},
 	})
 
@@ -48,12 +41,6 @@ end
 
 function Plugin.config()
 	local vimlspconfig = vim.lsp.config
-	-- local lspconfig = vim.lsp.config
-	-- lspconfig.clangd.setup {
-	-- 	on_attach = function(client, bufnr)
-	--
-	-- 	end
-	-- }
 	local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 	local group = vim.api.nvim_create_augroup('lsp_cmds', { clear = true })
@@ -74,9 +61,7 @@ function Plugin.config()
 			'clangd'
 		},
 		handlers = {
-			-- See :help mason-lspconfig-dynamic-server-setup
 			function(server)
-				-- See :help lspconfig-setup
 				vimlspconfig.tsserver.setup({
 					capabilities = lsp_capabilities,
 					settings = {
@@ -95,34 +80,9 @@ function Plugin.config()
 					}
 				})
 			end,
-			--
-			-- ['tsserver'] = function()
-			--  lspconfig.tsserver.setup({
-			--    capabilities = lsp_capabilities,
-			--    settings = {
-			--      completions = {
-			--        completeFunctionCalls = true
-			--      }
-			--    }
-			--  })
-			-- end,
-			--
 			['lua_ls'] = function()
 				require('plugins.lsp.lua_ls')
 			end,
-			-- lspconfig.emmet_ls.setup({
-			-- 	-- on_attach = on_attach,
-			-- 	capabilities = lsp_capabilities,
-			-- 	filetypes = { "css", "eruby", "html", "javascript", "javascriptreact", "less", "sass", "scss", "svelte", "pug", "typescriptreact", "vue" },
-			-- 	init_options = {
-			-- 		html = {
-			-- 			options = {
-			-- 				-- For possible options, see: https://github.com/emmetio/emmet/blob/master/src/config.ts#L79-L267
-			-- 				["bem.enabled"] = true,
-			-- 			},
-			-- 		},
-			-- 	}
-			-- })
 		}
 	})
 end

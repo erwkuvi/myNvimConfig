@@ -1,4 +1,3 @@
--- tailwind-tools.lua
 return {
 	{
 		"luckasRanarison/tailwind-tools.nvim",
@@ -6,18 +5,13 @@ return {
 		build = ":UpdateRemotePlugins",
 		dependencies = {
 			"nvim-treesitter/nvim-treesitter",
-			"nvim-telescope/telescope.nvim", -- optional
-			"neovim/nvim-lspconfig", -- optional
+			"nvim-telescope/telescope.nvim",
 		},
-		opts = {} -- your configuration
-	},
-	{
-		"neovim/nvim-lspconfig",
 		opts = {
-			servers = {
-				tailwindcss = {},
-			}
-		},
+			server = {
+				override = false,
+			},
+		}
 	},
 	{
 		"NvChad/nvim-colorizer.lua",

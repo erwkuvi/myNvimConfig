@@ -1,5 +1,5 @@
 local Plugin = {'nvim-lualine/lualine.nvim',
-								dependencies = {'nvim-tree/nvim-web-devicons'}
+								dependencies = {'nvim-tree/nvim-web-devicons', 'catppuccin/nvim'}
 								}
 
 Plugin.event = 'VeryLazy'
@@ -7,7 +7,7 @@ Plugin.event = 'VeryLazy'
 -- See :help lualine.txt
 Plugin.opts = {
   options = {
-    theme = 'catppuccin',
+    theme = "auto",
 		icons_enabled = true,
 		section_separators   = { left = '', right = '' },
     component_separators = { left = '', right = '' },

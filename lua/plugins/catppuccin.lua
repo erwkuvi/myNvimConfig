@@ -67,6 +67,7 @@ return {
                 gitsigns = true,
                 nvimtree = true,
                 notify = true,
+                lualine = true,
                 mini = {
                     enabled = true,
                     indentscope_color = "",

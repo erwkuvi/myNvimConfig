@@ -1,7 +1,7 @@
 return {
     "zbirenbaum/copilot.lua",
     -- Use InsertEnter so it attaches the moment you start typing in any file
-    event = "InsertEnter", 
+    event = "InsertEnter",
     config = function()
         require("copilot").setup({
             suggestion = {
@@ -26,11 +26,11 @@ return {
         })
 
         -- Your Shift-Tab Mapping
-        vim.keymap.set("i", '<S-Tab>', function()
+        vim.keymap.set("i", '<C-s>', function()
             if require("copilot.suggestion").is_visible() then
                 require("copilot.suggestion").accept()
             else
-                vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<S-Tab>", true, false, true), "n", false)
+                vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-s>", true, false, true), "n", false)
             end
         end, { silent = true })
     end,
